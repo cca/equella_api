@@ -33,8 +33,6 @@ To obtain an OAUTH token & set up the script:
 
 > .../oauth/authorise?response_type=token&client_id=[client id]&redirect_uri=[redirect URL]
 
-https://vault.cca.edu/oauth/authorise?response_type=token&client_id=9688d4a0-c140-41e6-99db-86f46b3328c1&redirect_uri=http://vm-lib-www-dev-01/vapir.html
-
 - Sign in _as the user whose search results you want to power the API_, you'll be redirected. Copy the `access_token` parameter out of the URL
 - Replace the value of `'X-Authorization-Token'` in vapir.js with your token
 - Replace the `url` value (first variable) with your EQUELLA instance's URL
