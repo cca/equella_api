@@ -1,8 +1,8 @@
 # VAULT Public Search API
 
-A small JavaScript library wrapping the EQUELLA search API for CCA's VAULT. Performs a search on all public items so users will _not_ see items visible only within the college, their department, etc.
+A small client-side JavaScript library wrapping the EQUELLA search API for CCA's VAULT. Performs a search on all public items so users will _not_ see items visible only within the college, their department, etc.
 
-Depends on jQuery. Only tested with jQuery 1.4.1 but should work on anything higher.
+Depends on jQuery. Only tested with jQuery 1.4.1.
 
 Example (only available on CCA campus): http://vm-lib-www-dev-01/vapir.html
 
@@ -41,4 +41,4 @@ https://vault.cca.edu/oauth/authorise?response_type=token&client_id=9688d4a0-c14
 
 ## Developing
 
-If you have npm, uglifyjs, and sass installed you can minify vapir.js and compile vapir.scss to CSS with `npm run build`.
+If you have npm, uglifyjs, and sass installed you can minify vapir.js and compile vapir.scss to CSS with `npm run build`. There are more commands in the `scripts` section of the package.json.
