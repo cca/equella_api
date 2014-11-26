@@ -1,0 +1,28 @@
+{
+  "name": "vapir",
+  "version": "1.0.0",
+  "description": "VAULT public search API",
+  "main": "vapir.js",
+  "scripts": {
+    "build": "npm run uglify; npm run sass",
+    "uglify": "uglifyjs -cm --screw-ie8 vapir.js -o vapir.min.js",
+    "css": "sass --style compressed --sourcemap=none --watch vapir.scss:vapir.min.css",
+    "sass": "sass --style compressed --sourcemap=none vapir.scss vapir.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cca/equella_vapir"
+  },
+  "keywords": [
+    "EQUELLA",
+    "search",
+    "API"
+  ],
+  "author": "phette23 <phette23@gmail.com> (http://phette.net/)",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/cca/equella_vapir/issues"
+  },
+  "homepage": "https://github.com/cca/equella_vapir"
+}

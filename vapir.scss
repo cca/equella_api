@@ -1,0 +1,36 @@
+// variables
+$itemMaxWidth: 300px;
+// height/width of EQUELLA thumbnails is a known quantity
+$thumbHeight: 66px;
+$thumbWidth: 88px;
+$linkColor: #072e99;
+
+#vapir-results {
+    li {
+        height: $thumbHeight;
+        list-style-type: none;
+        margin-bottom: 1em;
+        max-width: $itemMaxWidth;
+        padding: 0;
+        overflow-y: hidden;
+        text-overflow: ellipsis;
+    }
+
+    img {
+        border: 1px solid #333;
+        float: left;
+        height: $thumbHeight;
+        margin-right: .5em;
+        padding: 2px;
+        width: $thumbWidth;
+
+        &:hover {
+            border: 1px solid $linkColor;
+        }
+    }
+
+    strong {
+        position: relative;
+        top: .5em;
+    }
+}

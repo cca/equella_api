@@ -1,0 +1,33 @@
+<head>
+    <title>Vault Search</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vapir.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>VAULT Search</h1>
+    <!-- note: jQuery 1.4.1 is what we have on Drupal & Millennium -->
+    <form method="GET" name="vapir" id="search" class="form-inline" role="form">
+        <input class="form-control" type="text" name="q">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <div id="vapir-results" style="display:none;"></div>
+    <p>Try <a href="https://vault.cca.edu/logon.do">logging in</a> to see more results.</p>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script src="vapir.js"></script>
+<script>
+// param in URL? then search for it
+try {
+    var query = location.search.match(/searcharg=(.*)?&?/)[1].replace('&','');
+    vapir(decodeURIComponent(query), '#vapir-results');
+} catch (e) {}
+
+$('#search').submit(function (event) {
+    var query = $(this).find('input').val();
+
+    event.preventDefault();
+    vapir(query, '#vapir-results');
+});
+</script>
