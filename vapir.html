@@ -20,7 +20,7 @@
 <script>
 // param in URL? then search for it
 try {
-    var query = location.search.match(/searcharg=(.*)?&?/)[1].replace('&','');
+    var query = location.search.match(/searcharg=(.*)?&?/)[1].split('&')[0];
     vapir(decodeURIComponent(query), '#vapir-results');
 } catch (e) {}
 
