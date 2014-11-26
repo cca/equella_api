@@ -8,6 +8,7 @@
     "uglify": "uglifyjs -cm --screw-ie8 vapir.js -o vapir.min.js",
     "css": "sass --style compressed --sourcemap=none --watch vapir.scss:vapir.min.css",
     "sass": "sass --style compressed --sourcemap=none vapir.scss vapir.min.css",
+    "push": "[ -x ./deploy.sh ] && ./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
