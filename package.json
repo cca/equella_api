@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/cca/equella_vapir/issues"
   },
-  "homepage": "https://github.com/cca/equella_vapir"
+  "homepage": "https://github.com/cca/equella_vapir",
+  "devDependencies": {
+    "uglify-js": "^2.4.15"
+  }
 }

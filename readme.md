@@ -41,4 +41,4 @@ https://vault.cca.edu/oauth/authorise?response_type=token&client_id=9688d4a0-c14
 
 ## Developing
 
-If you have npm, uglifyjs, and sass installed you can minify vapir.js and compile vapir.scss to CSS with `npm run build`. There are more commands in the `scripts` section of the package.json.
+If you have npm, uglify-js, and sass installed you can minify vapir.js and compile vapir.scss to CSS with `npm run build`. There are more commands in the `scripts` section of the package.json.
