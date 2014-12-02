@@ -40,3 +40,7 @@ To obtain an OAUTH token & set up the script:
 ## Developing
 
 If you have npm, uglify-js, and sass installed you can minify vapir.js and compile vapir.scss to CSS with `npm run build`. There are more commands in the `scripts` section of the package.json.
+
+## License
+
+[Apache v. 2](https://www.apache.org/licenses/LICENSE-2.0.txt)
